@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body {
+    background-image: url(./8993e45b7ab3a4e424e7cb754b489627.jpg);
+}
+
+.char-card {
+    width: 450px;
+    height: 250px;
+    background: linear-gradient(#9392f3, #12120012);
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header, .char-info, #spell-container, #hp-bar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header {
+    height: 33%;
+    position: relative;
+    margin-top: 17px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.char-pic {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.char-info {
+    height: 100%;
+    width: 370px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#char-name, #char-buff-container, #hp-bar {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #efefef;
+}
+
+#char-name > span {
+    text-shadow: -1px 1px 1px rgb(0, 0, 0);
+}
+
+#hp-bar-container {
+    height: 50%;
+    flex-direction: column;
+}
+
+#hp-bar {
+    height: 50px;
+    position: relative;
+}
+
+#hp-bar-overlay {
+    height: 100%;
+    width: 50%;
+    background-color: green;
+    position: relative;
+}
+
+#spell-container {
+    height: 33%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.spellslot {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(135deg, #121212, #12120000);
+    transform: rotate(45deg);
+}
+
+.spellslot:hover, .buff:hover, .debuff:hover {
+    background-color: red;
+}
+
+#char-debuff-bar, #char-buff-bar {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#char-buff-bar {
+    justify-content: flex-end;
+}
+
+.buff, .debuff {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(135deg, #121212, #12120000);
+    transform: rotate(45deg);
+    margin: 0 5px;
+}
+
+#health-container {
+    position: absolute;
+    top: 15px;
+    left: 150px;
+    border: 1px solid #121212;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+#health-container > span {
+    margin-left: 2px;
+    padding: 1px;
+}
